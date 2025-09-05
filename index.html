@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nanovero — Advanced Filtration Membranes</title>
+  <meta name="description" content="Nanovero develops high-performance, sustainable ultrafiltration and nanofiltration membranes for water, biotech, and industrial applications.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa7b2; --accent:#00a896; --accent-2:#6ee7b7; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --max-width:1100px; --container-padding:24px; color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:linear-gradient(180deg,#071021 0%, var(--bg) 100%); color:#e6eef3; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .wrap{max-width:var(--max-width); margin:40px auto; padding:var(--container-padding)}
+
+    /* Header */
+    header{display:flex; align-items:center; justify-content:space-between; gap:20px}
+    .brand{display:flex; align-items:center; gap:12px}
+    .logo{width:54px; height:54px; border-radius:12px; background:linear-gradient(135deg, var(--accent), var(--accent-2)); display:grid; place-items:center; font-weight:800; color:#042028}
+    .brand h1{font-size:18px; margin:0}
+    .brand p{margin:0; color:var(--muted); font-size:13px}
+    nav a{color:var(--muted); text-decoration:none; margin-left:18px; font-weight:600}
+    nav a.cta{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#042028; padding:10px 14px; border-radius:10px}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center; margin-top:28px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:var(--radius); padding:28px}
+    h2{font-size:28px; margin:0 0 10px}
+    p.lead{color:var(--muted); margin:0 0 18px; line-height:1.5}
+    .actions{display:flex; gap:12px}
+    .btn{padding:12px 18px; border-radius:12px; font-weight:700; border:0; cursor:pointer}
+    .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#042028}
+    .btn.ghost{background:transparent; border:1px solid rgba(255,255,255,0.06); color:var(--muted)}
+
+    /* Stats */
+    .stats{display:flex; gap:12px; margin-top:18px}
+    .stat{background:var(--glass); padding:12px; border-radius:10px; min-width:100px}
+    .stat b{display:block; font-size:20px}
+    .stat small{color:var(--muted)}
+
+    /* Right column card */
+    .card-right{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:12px; padding:18px}
+    .chip{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.03); color:var(--muted); font-weight:600; font-size:13px}
+
+    /* Features */
+    .features{display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:32px}
+    .feature{background:var(--card); border-radius:12px; padding:18px}
+    .feature h3{margin:0 0 8px}
+    .feature p{margin:0; color:var(--muted); font-size:14px}
+
+    /* Products */
+    .products{margin-top:36px}
+    .product-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+    .product{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:12px; padding:18px}
+    .product .tag{font-size:12px; color:var(--muted)}
+
+    /* Tech + Sustainability */
+    .split{display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:36px}
+    .codebox{background:#021018; padding:18px; border-radius:12px; font-family:monospace; font-size:13px; color:var(--accent-2); min-height:140px}
+
+    /* Contact / Footer */
+    .contact{margin-top:36px; display:flex; gap:18px; align-items:flex-start}
+    form{flex:1; background:var(--card); padding:18px; border-radius:12px}
+    label{display:block; font-size:13px; margin-bottom:6px}
+    input, textarea{width:100%; padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,0.04); background:transparent; color:inherit}
+    .socials{display:flex; gap:8px; align-items:center}
+    footer{margin-top:36px; color:var(--muted); font-size:13px; display:flex; justify-content:space-between; align-items:center}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .product-grid{grid-template-columns:repeat(2,1fr)}
+      .split{grid-template-columns:1fr}
+    }
+    @media (max-width:620px){
+      .features{grid-template-columns:1fr}
+      .product-grid{grid-template-columns:1fr}
+      header{flex-direction:column; align-items:flex-start}
+      nav{margin-top:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>NV</div>
+        <div>
+          <h1>Nanovero</h1>
+          <p>Precision membranes for clean water & bioprocessing</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#products">Products</a>
+        <a href="#technology">Technology</a>
+        <a href="#sustainability">Sustainability</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <p class="chip">Made for industry — scaled for impact</p>
+          <h2>High-performance ultrafiltration & nanofiltration membranes</h2>
+          <p class="lead">Nanovero engineers nano-architected polymer membranes that deliver high flux, low fouling, and predictable selectivity for water treatment, pharmaceutical clarification, and advanced industrial separations.</p>
+          <div class="actions">
+            <button class="btn primary">Request a sample</button>
+            <button class="btn ghost">Download datasheet</button>
+          </div>
+
+          <div class="stats" role="list" aria-label="Key metrics">
+            <div class="stat" role="listitem"><b>99.9%</b><small>Endotoxin reduction*</small></div>
+            <div class="stat" role="listitem"><b>>50 L/m²·h</b><small>Typical flux</small></div>
+            <div class="stat" role="listitem"><b>ISO 9001</b><small>Manufacturing</small></div>
+          </div>
+        </div>
+
+        <aside class="card-right" aria-labelledby="right-heading">
+          <h3 id="right-heading">Quick facts</h3>
+          <p style="color:var(--muted); margin-top:6px;">Custom pore sizes, scalable roll-to-roll manufacturing, and pilot testing support for integration into your process.</p>
+
+          <hr style="margin:12px 0; border-color:rgba(255,255,255,0.03)">
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <div class="chip">Water treatment</div>
+            <div class="chip">Biotech & Pharma</div>
+            <div class="chip">Food & Beverage</div>
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:10px; align-items:center">
+            <div style="width:46px;height:46px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent-2)); display:grid; place-items:center; color:#042028; font-weight:700">µ</div>
+            <div>
+              <div style="font-weight:700">Custom Development</div>
+              <div style="color:var(--muted); font-size:13px">Pilot batches and scale-up assistance</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="features" aria-label="Core capabilities">
+        <div class="feature">
+          <h3>Precision pores</h3>
+          <p>Controlled manufacturing yields narrow pore distributions for predictable separation and minimal product loss.</p>
+        </div>
+        <div class="feature">
+          <h3>Low fouling</h3>
+          <p>Surface chemistry and structure reduce fouling rates and extend run times between cleanings.</p>
+        </div>
+        <div class="feature">
+          <h3>Scale-ready</h3>
+          <p>Roll-to-roll production and inline quality control help bridge pilot to production volumes quickly.</p>
+        </div>
+      </section>
+
+      <section id="products" class="products">
+        <h2 style="font-size:20px; margin:0 0 12px">Product families</h2>
+        <div class="product-grid">
+          <article class="product" aria-labelledby="p1">
+            <div class="tag">UF Series</div>
+            <h3 id="p1">Ultrafiltration modules</h3>
+            <p style="color:var(--muted)">High-flux membranes for proteins clarification, colloid removal, and polishing applications.</p>
+          </article>
+
+          <article class="product" aria-labelledby="p2">
+            <div class="tag">NF Series</div>
+            <h3 id="p2">Nanofiltration membranes</h3>
+            <p style="color:var(--muted)">Selective divalent ion rejection with high permeate quality for industrial water reuse.</p>
+          </article>
+
+          <article class="product" aria-labelledby="p3">
+            <div class="tag">Custom</div>
+            <h3 id="p3">Tailored membranes</h3>
+            <p style="color:var(--muted)">Collaborative development for specific cutoffs, chemistries, and module formats.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="technology" class="split">
+        <div>
+          <h2 style="font-size:20px; margin:0 0 12px">Technology</h2>
+          <p style="color:var(--muted); margin-top:6px">Our membranes combine polymer chemistry, nano-structuring, and precision coating to achieve tunable selectivity with endurance in real process conditions.</p>
+
+          <div class="codebox" aria-hidden>
+            // Manufactured: roll-to-roll casting
+            // Control: pore profile & surface energy
+            // Validation: pilot skid testing, flux & rejection curves
+          </div>
+
+          <ul style="color:var(--muted); margin-top:12px">
+            <li>Scalable production with inline QC</li>
+            <li>Compatibility with standard module housings</li>
+            <li>Support for cleaning-in-place (CIP) regimes</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 id="sustainability" style="font-size:20px; margin:0 0 12px">Sustainability</h2>
+          <p style="color:var(--muted); margin-top:6px">Nanovero prioritizes resource-efficient processes and long membrane lifetime to reduce lifetime environmental impact.</p>
+
+          <div style="margin-top:12px; display:flex; gap:12px; flex-direction:column">
+            <div class="card-right">
+              <strong>Reduced footprint</strong>
+              <p style="color:var(--muted); margin:6px 0 0">Optimized module designs minimize energy per unit of water treated.</p>
+            </div>
+            <div class="card-right">
+              <strong>Recyclable components</strong>
+              <p style="color:var(--muted); margin:6px 0 0">Design for disassembly and reclaimed material streams where possible.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <form aria-label="Contact form">
+          <h3 style="margin:0 0 12px">Get in touch</h3>
+          <label for="name">Name</label>
+          <input id="name" name="name" placeholder="Your name" />
+          <label for="email" style="margin-top:8px">Email</label>
+          <input id="email" name="email" placeholder="you@company.com" />
+          <label for="message" style="margin-top:8px">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us about your project"></textarea>
+          <div style="margin-top:12px; display:flex; gap:10px">
+            <button type="submit" class="btn primary">Send message</button>
+            <a href="mailto:info@nanovero.example" class="btn ghost" style="text-decoration:none; display:inline-flex; align-items:center; padding:10px 14px">Email us</a>
+          </div>
+        </form>
+
+        <aside style="width:320px">
+          <div class="card-right">
+            <h4 style="margin:0">Headquarters</h4>
+            <p style="color:var(--muted); margin:6px 0 0">Seattle, WA • USA</p>
+            <p style="color:var(--muted); margin:6px 0 0">Phone: (555) 123-4567</p>
+          </div>
+
+          <div style="margin-top:12px; background:var(--card); padding:12px; border-radius:12px">
+            <div style="font-weight:700">Follow</div>
+            <div class="socials" style="margin-top:8px">
+              <a href="#" aria-label="LinkedIn" style="color:var(--muted); text-decoration:none">LinkedIn</a>
+              <a href="#" aria-label="Twitter" style="color:var(--muted); text-decoration:none">Twitter</a>
+              <a href="#" aria-label="GitHub" style="color:var(--muted); text-decoration:none">GitHub</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <footer>
+        <div>© Nanovero — Building better membranes for a sustainable future</div>
+        <div style="color:var(--muted)">Privacy • Terms</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
